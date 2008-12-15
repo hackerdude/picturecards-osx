@@ -1,0 +1,12 @@
+tignore`
+# xcode noise
+build/*
+*.mode1v3
+
+# SVN directories
+.svn
+
+# osx noise
+.DS_Store
+profile
+
