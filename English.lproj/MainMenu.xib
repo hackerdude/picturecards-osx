@@ -940,7 +940,16 @@
 								</object>
 								<object class="NSMenuItem" id="691142148">
 									<reference key="NSMenu" ref="477480709"/>
-									<string key="NSTitle">Child Profile Editor</string>
+									<string key="NSTitle">Profile Editor</string>
+									<string key="NSKeyEquiv"/>
+									<int key="NSKeyEquivModMask">1048576</int>
+									<int key="NSMnemonicLoc">2147483647</int>
+									<reference key="NSOnImage" ref="1033313550"/>
+									<reference key="NSMixedImage" ref="310636482"/>
+								</object>
+								<object class="NSMenuItem" id="45661514">
+									<reference key="NSMenu" ref="477480709"/>
+									<string key="NSTitle">Skill Level Editor</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -1611,6 +1620,14 @@
 						<reference key="destination" ref="249820292"/>
 					</object>
 					<int key="connectionID">521</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">openSkillLevelEditor:</string>
+						<reference key="source" ref="1014"/>
+						<reference key="destination" ref="45661514"/>
+					</object>
+					<int key="connectionID">523</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -2449,6 +2466,7 @@
 							<reference ref="249820292"/>
 							<reference ref="66760519"/>
 							<reference ref="691142148"/>
+							<reference ref="45661514"/>
 						</object>
 						<reference key="parent" ref="512824068"/>
 					</object>
@@ -2480,6 +2498,11 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">516</int>
 						<reference key="object" ref="66760519"/>
+						<reference key="parent" ref="477480709"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">522</int>
+						<reference key="object" ref="45661514"/>
 						<reference key="parent" ref="477480709"/>
 					</object>
 				</object>
@@ -2668,6 +2691,8 @@
 					<string>515.ImportedFromIB2</string>
 					<string>516.IBPluginDependency</string>
 					<string>516.ImportedFromIB2</string>
+					<string>522.IBPluginDependency</string>
+					<string>522.ImportedFromIB2</string>
 					<string>56.IBPluginDependency</string>
 					<string>56.ImportedFromIB2</string>
 					<string>57.IBEditorWindowLastContentRect</string>
@@ -2868,11 +2893,13 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{501, 729}, {196, 113}}</string>
+					<string>{{501, 709}, {192, 133}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -2937,7 +2964,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">521</int>
+			<int key="maxID">523</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2954,9 +2981,11 @@
 							<string>openImageEditor:</string>
 							<string>openImageTypeEditor:</string>
 							<string>openNounTypeEditor:</string>
+							<string>openSkillLevelEditor:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>

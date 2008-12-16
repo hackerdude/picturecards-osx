@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1DDD582C0DA1D0D100B32029 /* PictureBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* PictureBoard.xib */; };
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
+		6385AEAD0EF7356C00D6A894 /* SkillLevelEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6385AEAC0EF7356C00D6A894 /* SkillLevelEditor.xib */; };
 		639A46DA0EF5980D006D6AD5 /* PecsBoard.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 639A46D90EF5980D006D6AD5 /* PecsBoard.xcdatamodel */; };
 		639A46E00EF5A0ED006D6AD5 /* CardEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639A46DF0EF5A0ED006D6AD5 /* CardEditor.xib */; };
 		639A46E40EF5A1AE006D6AD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A46E30EF5A1AE006D6AD5 /* AppDelegate.m */; };
@@ -32,7 +33,7 @@
 		639A47ED0EF62A4B006D6AD5 /* Playdoh.png in Resources */ = {isa = PBXBuildFile; fileRef = 639A47DA0EF62A4B006D6AD5 /* Playdoh.png */; };
 		639A47EE0EF62A4B006D6AD5 /* Puzzle.png in Resources */ = {isa = PBXBuildFile; fileRef = 639A47DB0EF62A4B006D6AD5 /* Puzzle.png */; };
 		639A47EF0EF62A4B006D6AD5 /* Shirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 639A47DC0EF62A4B006D6AD5 /* Shirt.png */; };
-		639B1AEF0EF6D1B000F4D036 /* ChildProfileEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639B1AEB0EF6D1B000F4D036 /* ChildProfileEditor.xib */; };
+		639B1AEF0EF6D1B000F4D036 /* ProfileEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639B1AEB0EF6D1B000F4D036 /* ProfileEditor.xib */; };
 		639B1AF00EF6D1B000F4D036 /* ImageEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639B1AEC0EF6D1B000F4D036 /* ImageEditor.xib */; };
 		639B1AF10EF6D1B000F4D036 /* ImageTypeEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639B1AED0EF6D1B000F4D036 /* ImageTypeEditor.xib */; };
 		639B1AF20EF6D1B000F4D036 /* NounTypeEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639B1AEE0EF6D1B000F4D036 /* NounTypeEditor.xib */; };
@@ -56,6 +57,7 @@
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF750370BD2300C91783 /* picturecards-osx_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "picturecards-osx_Prefix.pch"; sourceTree = "<group>"; };
+		6385AEAC0EF7356C00D6A894 /* SkillLevelEditor.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillLevelEditor.xib; sourceTree = "<group>"; };
 		639A46D90EF5980D006D6AD5 /* PecsBoard.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = PecsBoard.xcdatamodel; sourceTree = "<group>"; };
 		639A46DF0EF5A0ED006D6AD5 /* CardEditor.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardEditor.xib; sourceTree = "<group>"; };
 		639A46E20EF5A1AE006D6AD5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,7 +82,7 @@
 		639A47DA0EF62A4B006D6AD5 /* Playdoh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Playdoh.png; sourceTree = "<group>"; };
 		639A47DB0EF62A4B006D6AD5 /* Puzzle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Puzzle.png; sourceTree = "<group>"; };
 		639A47DC0EF62A4B006D6AD5 /* Shirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shirt.png; sourceTree = "<group>"; };
-		639B1AEB0EF6D1B000F4D036 /* ChildProfileEditor.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChildProfileEditor.xib; sourceTree = "<group>"; };
+		639B1AEB0EF6D1B000F4D036 /* ProfileEditor.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileEditor.xib; sourceTree = "<group>"; };
 		639B1AEC0EF6D1B000F4D036 /* ImageEditor.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageEditor.xib; sourceTree = "<group>"; };
 		639B1AED0EF6D1B000F4D036 /* ImageTypeEditor.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTypeEditor.xib; sourceTree = "<group>"; };
 		639B1AEE0EF6D1B000F4D036 /* NounTypeEditor.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NounTypeEditor.xib; sourceTree = "<group>"; };
@@ -163,7 +165,8 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				639B1AEB0EF6D1B000F4D036 /* ChildProfileEditor.xib */,
+				639B1AEB0EF6D1B000F4D036 /* ProfileEditor.xib */,
+				6385AEAC0EF7356C00D6A894 /* SkillLevelEditor.xib */,
 				639B1AEC0EF6D1B000F4D036 /* ImageEditor.xib */,
 				639B1AED0EF6D1B000F4D036 /* ImageTypeEditor.xib */,
 				639B1AEE0EF6D1B000F4D036 /* NounTypeEditor.xib */,
@@ -330,10 +333,11 @@
 				639A47ED0EF62A4B006D6AD5 /* Playdoh.png in Resources */,
 				639A47EE0EF62A4B006D6AD5 /* Puzzle.png in Resources */,
 				639A47EF0EF62A4B006D6AD5 /* Shirt.png in Resources */,
-				639B1AEF0EF6D1B000F4D036 /* ChildProfileEditor.xib in Resources */,
+				639B1AEF0EF6D1B000F4D036 /* ProfileEditor.xib in Resources */,
 				639B1AF00EF6D1B000F4D036 /* ImageEditor.xib in Resources */,
 				639B1AF10EF6D1B000F4D036 /* ImageTypeEditor.xib in Resources */,
 				639B1AF20EF6D1B000F4D036 /* NounTypeEditor.xib in Resources */,
+				6385AEAD0EF7356C00D6A894 /* SkillLevelEditor.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

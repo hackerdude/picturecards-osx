@@ -56,7 +56,7 @@
 
 - (IBAction)openChildProfileEditor:(id) sender;
 {
-	if ( ! [NSBundle loadNibNamed:@"ChildProfileEditor" owner:self] ) {
+	if ( ! [NSBundle loadNibNamed:@"ProfileEditor" owner:self] ) {
 		NSLog(@"Error Loading design-time for Child Profiles!");
 	}
 }
@@ -75,6 +75,12 @@
 	}
 }
 
+- (IBAction)openSkillLevelEditor:(id) sender;
+{
+	if ( ! [NSBundle loadNibNamed:@"SkillLevelEditor" owner:self] ) {
+		NSLog(@"Error Loading design-time for Skill Levels!");
+	}
+}
 
 
 @end

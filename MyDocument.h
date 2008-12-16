@@ -22,5 +22,6 @@
 - (IBAction)openChildProfileEditor:(id) sender;
 - (IBAction)openNounTypeEditor:(id) sender;
 - (IBAction)openImageTypeEditor:(id) sender;
+- (IBAction)openSkillLevelEditor:(id) sender;
 
 @end
