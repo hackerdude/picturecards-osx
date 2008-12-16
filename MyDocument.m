@@ -82,5 +82,48 @@
 	}
 }
 
+- (IBAction)addImage:(id) sender
+{
+	id imageInfo = [[imageArrayController selectedObjects] lastObject];
+	if ( ! imageInfo ) return;
+	
+	NSOpenPanel *openPanel = [NSOpenPanel openPanel];
+	[openPanel setCanChooseDirectories:NO];
+	[openPanel setCanCreateDirectories:NO];
+	[openPanel setAllowsMultipleSelection:NO];
+	
+	SEL select = @selector(addImageSheetDidEnd:returnCode:contextInfo:);
+	[openPanel beginSheetForDirectory:nil
+								 file:nil
+					   modalForWindow:[sender window]
+						modalDelegate:self
+					   didEndSelector:select
+						  contextInfo:imageInfo];
+}
+
+- (NSString *)applicationSupportFolder {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
+    NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] :NSTemporaryDirectory();
+    return [basePath stringByAppendingPathComponent:@"AbstractTree"];
+}
+
+
+- (void)addImageSheetDidEnd:(NSOpenPanel*)openPanel 
+				 returnCode:(NSInteger)returnCode 
+				contextInfo:(NSManagedObject*)recipe 
+{ 
+	if (returnCode == NSCancelButton) return; 
+	NSString *path = [openPanel filename]; 
+	//Build the path we want the file to be at 
+	NSString *destPath = [self applicationSupportFolder];
+	NSString *guid = [[NSProcessInfo processInfo] globallyUniqueString]; 
+	destPath = [destPath stringByAppendingPathComponent:guid]; 
+	[[NSFileManager defaultManager] copyPath:path 
+									  toPath:destPath 
+									 handler:nil]; 
+	[recipe setValue:destPath forKey:@"imagePath"]; 
+} 
+
+
 
 @end

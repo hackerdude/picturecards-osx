@@ -15,6 +15,7 @@
 	IBOutlet IKImageBrowserView *pecsBoard;
 	IBOutlet IKImageBrowserView *sentenceStrip;
 
+	IBOutlet NSArrayController *imageArrayController;
 }
 
 - (IBAction)openCardEditor:(id) sender;
@@ -23,5 +24,6 @@
 - (IBAction)openNounTypeEditor:(id) sender;
 - (IBAction)openImageTypeEditor:(id) sender;
 - (IBAction)openSkillLevelEditor:(id) sender;
+- (IBAction)addImage:(id) sender;
 
 @end
